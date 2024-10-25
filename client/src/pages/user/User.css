@@ -1,0 +1,102 @@
+/* Orders.css */
+
+.dashboard {
+    background-color: #f8f9fa;
+  }
+  
+  .order-card {
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .order-card h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .order-card p {
+    margin: 0.2em 0;
+    color: #555;
+  }
+  
+  .order-card h4 {
+    margin-top: 1em;
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  .product-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .product-item {
+    border-top: 1px solid #eee;
+    padding-top: 8px;
+    margin-top: 8px;
+  }
+  
+  .product-item p {
+    margin: 0.2em 0;
+  }
+  
+
+
+/* 
+  dashboard */
+
+
+  /* Dashboard.css */
+
+.user-info {
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: box-shadow 0.3s ease;
+}
+
+.user-info:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.user-info-title {
+  font-size: 1.5rem; /* Slightly larger title */
+  font-weight: 600; /* Semi-bold */
+  margin-bottom: 10px;
+}
+
+.user-info-details p {
+  margin: 5px 0; /* Spacing between lines */
+  font-size: 1rem; /* Standard text size */
+  color: #333; /* Darker text color */
+}
+
+.card {
+  border: none; /* Remove default card border */
+  border-radius: 8px; /* Rounded corners */
+  background: #fff; /* White background for the card */
+}
+
+.container-fluid {
+  padding: 20px; /* Padding around the container */
+}
+
+.row {
+  margin: 0; /* Remove default margin */
+}
+
+.col-md-3 {
+  padding: 0; /* Remove default padding */
+}
+
+.col-md-9 {
+  padding: 0; /* Remove default padding */
+}
+
+.user-info-content {
+  padding: 20px;
+}

@@ -1,0 +1,238 @@
+/* Product Image Container */
+.prod-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+  gap: 20px; /* Space between images */
+  width: 120%;
+  max-width: 1000px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.prod-img-container .card-img {
+  width: 100%;
+  height: 450px; /* Fixed height */
+  object-fit: cover; /* Ensures the image covers the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+.prod-img-container .card-img:hover {
+  cursor: pointer;
+}
+
+/* General Styles */
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  margin-bottom: 70px;
+}
+
+.product-details-info {
+  max-width: 500px;
+  width: 100%;
+  margin-left: 10%;
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.prod-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.prod-desc {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.prod-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.color-options {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.color-option {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.color-option.selected {
+  /* Remove border-color here as it is handled inline in the component */
+}
+
+
+.size-options {
+  display: flex;
+  justify-content: start; /* Aligns buttons to the left */
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.size-options {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.size-option {
+  padding: 8px 16px;
+  border: 1px solid #333;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.size-option:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.size-option.selected {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+
+.imgs{
+  margin-top: 20px;
+}
+
+
+/* Button Styles */
+.bor-btn-pro {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.bor-btn-pro:hover {
+  background-color: #555;
+}
+
+.bor-btn-pro-bn {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.bor-btn-pro-bn:hover {
+  background-color: #555;
+}
+.similar-prods {
+  margin-top: 20px;
+}
+
+.similar-prods h4 {
+  margin-bottom: 10px;
+}
+
+.similar-prods .card {
+  width: 200px;
+}
+
+.similar-prods .card img {
+  width: 100%;
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Ensures the image covers the container */
+  transition: transform 0.3s ease;
+}
+
+
+
+a{
+  text-decoration: none;
+  color: grey;
+}
+
+.img1{
+  display: flex;
+}
+
+.img1 p{
+  margin-top: 30px;
+}
+
+
+
+@media screen and (max-width: 875px) {
+  .prod-img-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 2 images per row */
+    gap: 20px; /* Space between images */
+    width: 120%;
+    max-width: 1000px; /* Adjust as needed */
+    margin: 0 auto;
+  }
+  
+  .prod-img-container .card-img {
+    width: 100%;
+    height: 450px; /* Fixed height */
+    object-fit: cover; /* Ensures the image covers the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .product-details{
+    width: 100%;
+  }
+
+  .prod-img-container .card-img {
+    width: 70%;
+    height: 450px; /* Fixed height */
+    object-fit: cover; /* Ensures the image covers the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .prod-img-container{
+    width: 100%;
+  }
+  .product-details-info{
+    width: 100%;
+    font-size: smaller;
+  }
+
+}
+
+
+@media screen and (max-width: 540px) {
+  .prod-img-container .card-img {
+    width: 100%;
+    height: 450px; /* Fixed height */
+    object-fit: cover; /* Ensures the image covers the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+}

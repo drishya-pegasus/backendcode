@@ -1,0 +1,173 @@
+.fullprod {
+  width: 98%;
+  height: auto;
+  margin-top: 2%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.offer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 10px;
+  color: whitesmoke;
+  background-color: black;
+}
+
+.offer h4{
+  font-size: 15px;
+}
+.fullprod.loaded {
+  opacity: 1;
+}
+
+.pcards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 1.3%;
+}
+
+.pdets{
+  padding-top: 10px;
+}
+
+@media (max-width: 500px) {
+    .pcards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+      gap: 1.5%;
+      width: 100%;
+      height: 100%;
+      margin-left: 1.5%;
+    }
+
+    .pdets{
+      margin-top: 0;
+    }
+    .pdets h4{
+      font-size: 20px;
+    }
+    .pdets h6{
+      font-size: 25px;
+    }
+
+}
+
+.priceofdetail{
+  margin-top: -10px;
+}
+
+.pcardss {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1.5%;
+}
+
+.pcard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 0px;
+  margin-bottom: 5%;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: bounceIn 0.8s ease-in-out forwards;
+  animation-delay: calc(0.1s * var(--animation-order));
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pimg {
+  width: 101%;
+  height: 100%;
+
+}
+
+.pimg img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+.linkdiffprods {
+  color: black;
+  text-decoration: none;
+  width: 32%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.pimg {
+  position: relative;
+  border-radius: 20px;
+
+}
+
+.pimg img {
+  width: 100%;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+
+}
+
+.pcard:hover .default-photo {
+  opacity: 0;
+}
+
+.pcard:hover .hover-photo {
+  opacity: 1;
+}
+
+.hover-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets */
+@media (max-width: 768px) {
+  .linkdiffprods {
+    width: 48%;
+    margin-bottom: 4%;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .linkdiffprods {
+    width: 100%;
+    margin-bottom: 4%;
+  }
+  
+  .pimg img {
+    height: 300px;
+  }
+}
+
+

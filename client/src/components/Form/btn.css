@@ -1,0 +1,25 @@
+.btn{
+background-color: grey;
+transition: 0.5s;
+border: 1px solid black;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+
+@media screen and (max-width:500px){
+    .search-input{
+        margin-top: 80px;
+        margin-left: -250px;
+        z-index: 1;
+    }
+    .closese{
+        margin-top: 80px;
+        color: black;
+        z-index: 1;
+    }
+}
+
